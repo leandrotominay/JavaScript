@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Verificador de Idade</title>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body id="cor">
+
+        <header><h1>Verificador de Idade</h1></header>
+
+        <section>
+            <div id="center">
+                <div id="tabela">
+                    <p>
+                        Ano de Nascimento:
+                        <input type="number" id="ano"  name="ano" min="0" placeholder="entre 1910 e 2020">
+                    </p>
+                    <p>
+                        Sexo:
+                        <input type="radio" name="genero"
+                            id="masculino" value="Homem">
+                        <label for="masculino">Masculino</label>
+
+                        <input type="radio" name="genero" id="feminino"
+                            value="Mulher">
+                        <label for="feminino">Feminino</label>
+                    </p>
+                    <button type="submit" autofocus onclick="verificar()">
+                        Verificar
+                    </button>
+                </div>
+                <div id="info">
+
+                    <div id="msg">
+                        Preencha os dados acima para ver o resultado!
+                    </div>
+                    <div id="imagem">
+            
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <footer>
+            <p>&copy; Leandro Ramos 2020</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
